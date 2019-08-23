@@ -1,0 +1,97 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--
+	New Perspectives on HTML5 and CSS3, 7th Edition
+	Project V3
+	
+	Author:Eric Encarnacion
+	Date: 8/22/2019
+	
+	Filename: rules.html
+	-->
+	<meta charset="utf-8" />
+	<link href="styles.css" rel="stylesheet" />
+	<link href="table.css" rel="stylesheet" />
+	<title>Rules</title>
+</head>
+
+<body>
+	<header>
+		<img src="dsBuffer.bmp.png" alt="Baseball"/>
+		<nav class="horizontalNavigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Positions.html">Positions</a></li>
+				<li><a href="rules.html">Rules</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+<!-- M7LO5 Demonstrate the use of a text box in a form, M7LO6 Demonstrate the use of check boxes in a form,
+M7LO7 Demonstrate the use of radio buttons in a form, M7LO8 Demonstrate the use of a selection list in a form,
+M7LO9 Demonstrate the use of a text area in a form, M7LO10 Demonstrate the use of a submit button in a form--> 	
+	<section>
+      <h1>Contact Us</h1>
+      <p>Required Item (*)</p>
+		<div>
+			<label>Title</label>
+            <input type="text" name="title" id="titleBox" list="titleList">
+            <datalist id="titleList">
+            <option value="Mr."></option>
+            <option value="Mrs."></option>
+            <option value="Ms."></option>
+			</datalist>
+        </div>
+
+  
+            <label for="fnBox">First Name*</label>
+            <input type="text" name="firstName" id="fnBox" required>
+
+            
+            <label for="lnBox">Last Name*</label>
+            <input type="text" name="lastName" id="lnBox" required>
+
+            
+            <label for="addBox">Address*</label>
+            <textarea name="address" id="addBox"></textarea>
+
+            
+            <label for="mailBox">E-mail*</label>
+            <input type="email" name="email" id="mailBox" required>
+			
+			<label for="mailCB">Add me to mailing list!</label>
+            <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+			
+            <label for="phoneNumber">Phone Number*</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(nnn) nnn-nnnn">
+
+           
+            <label for="regList">Reason for Contacting</label>
+            <select  name="" id="regList">
+				<option value="play">I want to register to play</option>
+				<option value="volunteer">I would like to volunteer</option>
+				<option value="information">I would like more information)</option>
+				<option value="donate">i would like to donate</option>
+			</select>
+			
+			<label>Do you love baseball?</label>
+			<label for="Yes">Yes</label>
+			<input name="love" id="Yes" value="yes" type="radio" />
+			<label for="No">No</label>
+			<input name="love" id="No" value="no" type="radio" />
+
+            
+            <p><input type="submit" name="submit" value="Submit"></p>
+
+	  </form>
+      
+   </section>
+	<footer> 
+		7/18/2019 &copy;
+	</footer>
+</body>
+
+</html>

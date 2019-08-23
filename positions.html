@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--
+	New Perspectives on HTML5 and CSS3, 7th Edition
+	Project V3
+	
+	Author:Eric Encarnacion
+	Date: 8/22/2019
+	
+	Filename: positions.html
+	-->
+	<meta charset="utf-8" />
+	<link href="styles.css" rel="stylesheet" />
+	<link href="table.css" rel="stylesheet" />
+	<title>Positions</title>
+</head>
+
+<body>
+	<header>
+		<img src="dsBuffer.bmp.png" alt="Baseball"/>
+		<nav class="horizontalNavigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Positions.html">Positions</a></li>
+				<li><a href="rules.html">Rules</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	<article>
+		<h1>Positions</h1>
+		<img src="221028.jpg" alt=""/>
+<!-- M6LO3 Demonstrate how to create a table. Shows the different players in each fielsing position. -->
+		<table id="pricing">
+			<colgroup>
+				<col id="firstCol" />
+				<col class="dataCols" span="5" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th colspan="5">Fielding Positons</th>
+				</tr>
+			
+			</thead>
+			<tfoot>
+<!--	M6LO4 Demonstrate how to span multiple rows or multiple columns in a table. The table footer spans the intire rows of the table. -->		
+				<tr>
+					<td colspan="5">The positions in baseball are primarily defensive. On the offensive side all the players become hitters when it's their turn at bat. There are nine players on the defensive team and each has an important role in helping to get outs and to prevent the other team from scoring runs. The nine players are pitcher, catcher, first base, second base, shortstop, third base, right field, center field, and left field. Of these nine defensive baseball players, only two have locations that are defined by the rules. These are the pitcher and the catcher. The rest of the players can be located most anywhere on the field, however, there are typical locations and names for each position that have become standard over the years. Players will shift or move around depending on the batter, the pitcher's style, and the game situation.</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th>Battery</th>
+					<td>Pitcher</td>
+					<td colspan="3">Catcher</td>
+				</tr>
+				<tr>
+					<th>Infielders</th>
+					<td>First baseman</td>
+					<td>Second baseman</td>
+					<td>Third baseman</td>
+					<td>Shortstop</td>
+				</tr>
+				<tr>
+					<th>Outfielders</th>
+					<td>Right fielder</td>
+					<td>Center fielder</td>
+					<td colspan="2">Left fielder</td>
+				</tr>
+			</tbody>
+		</table>
+	</article>
+	<footer> 
+		7/18/2019 &copy;
+	</footer>
+</body>
+
+</html>
